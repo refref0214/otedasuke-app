@@ -48,7 +48,41 @@ def get_worksheet():
     sheet = gc.open_by_key(SPREADSHEET_ID).sheet1
     return sheet
 
-st.title("💰 ひなたのお手伝い貯金アプリ Cloud")
+# --- ここから魔法のデザイン設定（最強版） ---
+st.markdown("""
+    <style>
+    /* Google Fonts（Webフォント）を読み込む */
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+
+    /* すべての要素に対して、強制的に丸文字を適用する */
+    html, body, [class*="st-"], header, footer, * {
+        font-family: 'M PLUS Rounded 1c', "Hiragino Maru Gothic Pro", "BIZ UDPGothic", "Meiryo", sans-serif !important;
+    }
+
+    /* タイトル (h1) */
+    h1 {
+        color: #A0D8EF !important;
+        font-size: 24px !important;
+        font-weight: bold !important;
+    }
+
+    /* 見出し (h3) */
+    h3 {
+        color: #FFB7C5 !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+    }
+    
+    /* 普通の文字 */
+    p, div, label, span {
+        font-size: 14px !important;
+        color: #555555 !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+# --- ここまで ---
+
+st.title("🐱 ひなたのお手伝い貯金アプリ Cloud ❤️")
 
 # ...（ここから下のコードは今までと同じでOK！）...
 # 1. 入力フォーム
