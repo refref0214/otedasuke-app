@@ -17,6 +17,7 @@ SPREADSHEET_ID = '1gPO7d5vGegHCR3VKs0xh6z_lgUvh5_7f6nyErfIlE6o'
 MENU = {
     "お皿洗い": 300,
     "洗濯物片付け":300,
+    "リビング掃除機":300,
     "お風呂掃除": 100,
     "ゴミ出し": 100,
     "玄関掃除": 100,
@@ -47,7 +48,7 @@ def get_worksheet():
     sheet = gc.open_by_key(SPREADSHEET_ID).sheet1
     return sheet
 
-st.title("💰 お手伝い貯金アプリ Cloud")
+st.title("💰 ひなたのお手伝い貯金アプリ Cloud")
 
 # ...（ここから下のコードは今までと同じでOK！）...
 # 1. 入力フォーム
